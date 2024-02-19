@@ -1,0 +1,670 @@
+
+html, body, pre {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    max-width: 100%; 
+}
+
+
+header {
+    background-color: #267eb5;
+    padding-top: 3.1%; /* Adjust the percentage as needed */
+    padding-bottom: 3.1%; /* Adjust the percentage as needed */
+    transition: padding 0.3s; /* Add smooth transition effect */
+    color:white;
+    height: 100%;
+    display: flex;
+    
+
+    
+}
+nav {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    padding-right: 70px;
+    z-index: 1;
+    
+
+
+}
+.site-name {
+    font-size: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.HeaderLinks{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+.HeaderLinks:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.HeaderLinks:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+@media screen and (max-height: 300px) {
+	.HeaderLinks {
+		margin-top: 40px;
+	}
+}
+
+
+
+.EventATMs{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+.About{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+.Blog{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+.Contact{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+.footerBox{
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.footerContent{
+    display: flex;
+    background-color: #267eb5;
+    color:white;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: none;
+    margin-bottom: none;
+}
+
+.wholeFooter {
+    margin-bottom: none;
+    padding-bottom: none;
+}
+
+html{
+    height: 100%;
+  }
+
+.footerCol1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerCol2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.footerTitle{
+    font-weight: 150;
+}
+
+.copyright {
+    background-color: #267eb5;
+    color:white;
+    margin-top:0;
+    text-align: center;
+
+}
+
+.copyrightContainer{
+    margin-bottom: 100px;
+}
+
+.footerLinks, .socials{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: 200;
+}
+.socials a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.blogFooter, .aboutFooter{
+    text-decoration: none;
+    color: inherit;
+
+}
+.HomeContainer1{
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeBlock1{
+    flex: 1;
+}
+.HomeBlock2{
+    flex: 1;
+}
+.HomeBlock1 div{
+    margin: 20% 0% 20% 30%;
+}
+
+.HomeBlock1 div > *{
+    margin-bottom: 30px;
+}
+
+.HomeBlock1 h1 {
+    font-size: 2.75vw;
+}
+
+.HomeBlock2 img{
+    margin: 30% 20% 20% 2%;
+    width: 30rem;
+}
+
+.FormButton {
+    display: inline-block;
+    padding: 22px 65px;
+    border-radius: 40px; /* Adjust the value as needed for the desired roundness */
+    background-color: #267eb5; /* Example background color */
+    color: #fff; /* Example text color */
+    text-decoration: none; /* Remove underline for NavLink */
+    font-family: Verdana;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.FormButton:hover {
+    background-color: #1a5b80; /* New background color on hover */
+}
+
+.FormButton:hover .FormButton-text {
+    transform: scale(1.1); /* Example animation on hover */
+}
+
+
+.linebreak{
+    border-bottom: 15px solid  #267eb5;
+}
+
+.Welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px ;
+    
+}
+
+.WelcomeToDashText{
+    flex: 1;
+    margin-left: 22em;
+    min-width: 350px;
+    line-height: 2;
+}
+
+
+
+.runningGuyImg{
+    flex: 1;
+    margin-right: 15em;
+}
+
+
+
+.EventATMs:hover{
+    text-decoration: underline;
+}
+.About:hover{
+    text-decoration: underline;
+}
+.Contact:hover{
+    text-decoration: underline;
+}
+.Placement:hover{
+    text-decoration: underline;
+}
+
+.Services {
+    display: flex;
+    flex-direction: column;
+    background-color: #267eb5;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Services h1 {
+    margin-bottom: 20;
+}
+
+
+
+.ServiceTypes{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.Request {
+    height: 1275px;
+    background-color: white;
+}
+
+.Request h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.RequestContent {
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: 2;
+    justify-content: center;
+    transform: scale(1.2);
+    margin-top: 150px;
+}
+
+.RequestText1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.ProcessingText1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.RequestImg1{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    width: 325px; /* Increase the width by 50% */
+    height: auto;
+}
+
+
+.RequestText2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.ProcessingText2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.RequestImg2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+
+.RequestText3{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.ProcessingText3{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+.RequestImg3{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.Quote1 {
+    display: flex;
+    flex-direction: column;
+    background-color:#67a0f0;
+    text-align: center;
+    height: 220px;
+    align-items: center;
+    padding-top: 40px;
+    color: white;
+}
+.Quote1 h1{
+    font-weight: 120;
+}
+.Quote1 h3{
+    font-weight: 70;
+    color: white;
+}
+
+.ATMPlacementImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 50px;
+}
+
+.ATMPlacementImages pre {
+    text-align: center;
+}
+
+.LocationShowcase h1{
+    text-align: center;
+    margin: 50px;
+}
+
+.ATM1 img{
+    max-width: 100%;
+    height: 300px;
+}
+.ATM2 img{
+    max-width: 100%;
+    height: 300px;
+}
+.ATM3 img{
+    max-width: 100%;
+    height: 300px;
+}
+
+.Ready{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formHeader {
+    text-align: center;
+}
+
+.formHeader h1 {
+    font-weight: 100;
+}
+
+.Name {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.ContactName{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.phoneNumber,.email, .businessName, 
+.businessWebsite, .businessAddress,
+.numberLocations, .dailyCustomers,
+.additionalInfo{
+    width: 50vw;
+
+}
+
+.ContactEmail, .message{
+    width: 50vw;
+}
+
+.firstName, .lastName {
+    width:24vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.ContactfirstName, .ContactlastName {
+    width:24vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+
+input[type="text"] {
+    width: 100%; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    background-color: rgb(248, 248, 248);
+    outline: none;
+    border: 1px solid grey;
+    
+}
+
+
+input[name = "from_first_name"]{
+    width: 100%;
+}
+
+input[name = "from_last_name"]{
+    width: 100%;
+}
+
+.submit{
+    display: inline-block;
+    padding: 22px 65px;
+    border-radius: 40px; /* Adjust the value as needed for the desired roundness */
+    background-color: #267eb5; /* Example background color */
+    color: #fff; /* Example text color */
+    text-decoration: none; /* Remove underline for NavLink */
+    font-family: Veranda;
+    margin: 30px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    font-weight: 1000;
+}
+
+.hookContainer {
+    display: flex;
+}
+
+.hookContainer img {
+    height: 100px;
+}
+
+.delivery img {
+    height: 45px;
+    width: auto;
+}
+
+
+.installation img {
+    height: 45px;
+    width: auto;
+}
+
+
+.training img {
+    height: 45px;
+    width: auto;
+}
+
+.hookContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.hookBlock h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.installation{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.training{
+    margin-right: 50px;
+}
+
+.delivery{
+    margin-left: 50px;
+}
+.hookBlock h1, h3{
+    color: #267eb5;
+}
+.hookContainer p{
+    line-height: 2;
+}
+
+.hookBlock h1{
+    font-size: 50px;
+}
+
+.ReadyForATM {
+    display: flex;
+    justify-content: center;
+    background-color: #67a0f0;
+    height: 125px;
+    align-items: center;
+}
+.ReadyForATM h3{
+    color: white;
+    margin-right: 50px;
+}
+
+.ProcessingContent{
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: 2;
+    justify-content: center;
+    transform: scale(1.2);
+    margin-top: 150px;
+}
+.ProcessingContent{
+    margin-bottom: 150px;
+    margin-left: 100px;
+}
+
+.ProcessingContent h2{
+    color: #267eb5;
+}
+.Processing h1{
+    text-align: center;
+    font-size: 65px;
+    margin-top: 75px;
+    color: #267eb5;
+}
+.checkMark{
+    padding-left: 85px;
+    padding-top: 20px;
+}
+
+.phone{
+    padding-left: 150px;
+}
+
+.aboutHeaderContainer{
+    margin: 50px auto;
+    width: 750px;
+}
+
+.aboutHeaderContainer p {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.FAQContainer{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.FAQWholePage {
+  background-color: #eee;
+}
+
+
+.ATM_Placements{
+    max-width: 330px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+.ATM_Processing{
+    max-width: 330px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+.Event_ATMs{
+    max-width: 330px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+.ContactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contactHeader{
+    text-align: center;
+}
+
+.submit{
+    display: inline-block;
+    padding: 22px 65px;
+    border-radius: 40px; /* Adjust the value as needed for the desired roundness */
+    background-color: #267eb5; /* Example background color */
+    color: #fff; /* Example text color */
+    text-decoration: none; /* Remove underline for NavLink */
+    font-family: Veranda;
+    margin: 30px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    font-weight: 1000;
+}
+
+.message textarea, .additionalInfo textarea{
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Allows the textarea to grow with its content */
+    min-height: 100px; /* Set a minimum height */
+    padding: 8px; /* Adjust padding as needed */
+    resize: vertical; /* Allow vertical resizing only */
+    background-color: rgb(248, 248, 248);
+    border: 1px solid grey; /* Add a border for better visibility */
+  }
+
+  .contactContainer{
+    height: 700px
+  }
+  .contact{
+    margin-top: 100px;
+  }
+
+
+  
