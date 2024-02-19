@@ -8,7 +8,7 @@ function EA() {
   return (
   <>
   <div className='Processing'>
-      <h1>Get Compliant With ATM Processing</h1>
+      <h1>Mobile ATMs For Any Event</h1>
       <div className='ProcessingContent'>
           <div className='ProcessingText1'>
               <br />
